@@ -1,0 +1,10 @@
+=link_to "Sign out", signout_path
+%h1 Game of Life beigns!
+
+%table
+	- (1..10).each do |i|
+		%tr{:id => i}
+		- (1..10).each do |j|
+			%td{:id => "#{i}x#{j}"}
+				= image_tag @images.first
+
