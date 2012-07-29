@@ -2,7 +2,8 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.7'
 gem 'omniauth-facebook'
-
+gem 'typhoeus'
+gem 'fb_graph'
 
 
 group :development, :test do
