@@ -3,7 +3,8 @@ class FacebookLoginController < ApplicationController
   end
   
   def create
-    redirect_to '/auth/facebook'
+    User.create_with_omniauth(request.env['omniauth.auth'])
+    render "show"
   end
   
   def show
