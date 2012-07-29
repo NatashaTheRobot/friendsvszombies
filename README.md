@@ -1,0 +1,1 @@
+This is Conway's Game Of Life with a Twist. See your friends battle Zombies. Who wins? 
