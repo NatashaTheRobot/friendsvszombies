@@ -1,4 +1,4 @@
-class FacebookLoginController < ApplicationController
+class FriendsController < ApplicationController
   def new
   end
   
@@ -7,8 +7,7 @@ class FacebookLoginController < ApplicationController
     if current_user.nil?
       render 'new'
     else
-      
-      Friend.fb_friends(current_user)
+      @friends = current_user.friends
     end
   end
   

@@ -32,6 +32,8 @@ class User < ActiveRecord::Base
     user.last_name = user_info['last_name']
     user.fb_id = user_info['id']
     user.save
+    
+    return user
   end
   
 end

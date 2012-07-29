@@ -1,6 +1,6 @@
 Friendsvszombies::Application.routes.draw do
-  root to: 'facebook_login#show'
-  resources :facebook_login
+  root to: 'friends#show'
+  resources :friends
   match '/auth/facebook/callback', to: 'sessions#create'
   match '/signout' => 'sessions#destroy', as: :signout
 end
